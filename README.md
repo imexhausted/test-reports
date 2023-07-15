@@ -22,6 +22,10 @@ run command in PowerShell >> scoop install allure
 this will automatically install allure on your windows machine
 (also you'll need java runtime for that download here: https://www.java.com/download/ie_manual.jsp)
 
+also you need to add specific location to the folder
+using git-bash on Win or in linux terminal run:
+"mkdir allure_reports"
+
 than start creating your autotests
 
 when autotests are created run a command: 
