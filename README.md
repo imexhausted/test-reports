@@ -29,7 +29,7 @@ using git-bash on Win or in linux terminal run:
 than start creating your autotests
 
 when autotests are created run a command: 
-"pytest -v -s --alluredir="C:\prog\for_allure\allure_reports" test_all.py"
+"pytest -v -s --alluredir="./allure_reports" test_all.py"
 
 when autotests are done run: 
 "allure serve ./allure_reports"
