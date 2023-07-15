@@ -32,6 +32,6 @@ when autotests are created run a command:
 "pytest -v -s --alluredir="C:\prog\for_allure\allure_reports" test_all.py"
 
 when autotests are done run: 
-"allure serve {path to reports}"
+"allure serve ./allure_reports"
 
 tests will be running and allure reports will be generated
