@@ -1,37 +1,63 @@
-Prquisites:
-download python
-If you're on linux run this command in terminal:
-"$ sudo apt-get update python
-$ sudo apt-get install python3.6"
 
-If you're on windows machine
-go to >> https://www.python.org/downloads/
 
-to check if python is installed run:
-"python --version"
+## Prequisites:  
+### Download **python**  
+If you're on linux run this command in terminal:  
+```
+sudo apt-get update python
+```  
 
-prequisites: 
-1. pip install selenium
-2. pip install pytest
-3. pip install allure-pytest
+If you're on windows machine go to official python [page](https://www.python.org/downloads/)
 
-install allure using "scoop" (package manager for Win)
-when scoop is installed:
-run command in PowerShell >> scoop install allure
+to check if python is installed run:  
+```
+python --version
+```
+<br>
 
-this will automatically install allure on your windows machine
-(also you'll need java runtime for that download here: https://www.java.com/download/ie_manual.jsp)
+### Download required packages
+```
+pip install selenium
+```
+```
+pip install pytest
+```
+```
+pip install allure-pytest
+```
+<br>
 
-also you need to add specific location to the folder
-using git-bash on Win or in linux terminal run:
-"mkdir allure_reports"
+### Install **Allure**
+You can install **Allure** using [scoop](https://scoop.sh/) (package manager for Win)  
+When scoop is installed:  
+run command in **PowerShell**   
+```
+scoop install allure
+```
 
-than start creating your autotests
+This will automatically install allure on your windows machine  
+Also you'll need **Java** runtime for **Allure**.
+>[Download Java](https://www.java.com/download/ie_manual.jsp)
 
-when autotests are created run a command: 
-"pytest -v -s --alluredir="./allure_reports" test_all.py"
+<br>
 
-when autotests are done run: 
-"allure serve ./allure_reports"
+### Place for test reports
+For **Allure** reports you'll need to add specific location to the repository  
+using git-bash on Win or in linux terminal run:  
+```
+mkdir allure_reports
+```
+*name it whatewer you want*  
+<br>
+<br>
+## How to Run
+When autotests are created run a command:  
+```
+pytest -v -s --alluredir="./allure_reports" YOUR_TEST_NAME.py
+```
 
-tests will be running and allure reports will be generated
+when autotests are done run this command:  
+```
+allure serve ./allure_reports  
+```
+This command will convert reports created in ```allure_reports/``` to some kind of a website where you'll have all tests you ran.
