@@ -39,17 +39,10 @@ This will automatically install allure on your windows machine
 Also you'll need **Java** runtime for **Allure**.
 >[Download Java](https://www.java.com/download/ie_manual.jsp)
 
+
+<br>
 <br>
 
-### Place for test reports
-For **Allure** reports you'll need to add specific location to the repository  
-using git-bash on Win or in linux terminal run:  
-```
-mkdir allure_reports
-```
-*name it whatewer you want*  
-<br>
-<br>
 ## How to Run
 When autotests are created run a command:  
 ```
